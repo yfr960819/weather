@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/tmp_mainbg">
+	<RelativeLayout android:id="@+id/linearLayout1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:background="@drawable/navbg">
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView1" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+			android:text="@string/title" android:layout_marginLeft="10dip"
+			android:layout_centerVertical="true"></TextView>
+		<Button android:id="@+id/city_button" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18px"
+			android:text="@string/city_str" android:textColor="@color/white"
+			android:background="@drawable/menu_top_bt"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" android:layout_marginRight="10dip"></Button>
+		<TextView android:text="TextView" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/city"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/city_button"
+			android:layout_centerVertical="true" android:layout_marginRight="10dip"></TextView>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout2" android:orientation="vertical"
+		android:layout_height="fill_parent">
+
+		<include
+		    android:id="@+id/content"
+		    layout="@layout/content_layout" />
+
+	</LinearLayout>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/hello"
+		android:id="@+id/test" />
+</LinearLayout>
